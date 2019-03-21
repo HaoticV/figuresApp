@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Zliczanie pol figur</string>
+    <string name="hint01">Suma pol=</string>
+    <string name="hint02">Dodaj kolejne pole</string>
+    <string name="hint11">Pole trojkata=</string>
+    <string name="button01"> RESETUJ </string>
+    <string name="button02"> TROJKAT </string>
+    <string name="button03"> PROSTOKAT </string>
+    <string name="button04"> KOLO </string>
+    <string name="button11"> OBLICZ </string>
+    <string name="button12"> DODAJ </string>
+    <string name="button13"> REZYGNACJA </string>
+</resources>

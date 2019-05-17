@@ -10,29 +10,34 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-class Rectangle{
-    private double a,b;
-    Rectangle(double _a, double _b){a=_a;b=_b;}
+class Circle
+{
+    private double r;
+    Circle(double _r){r=_r;}
 
-    double area(){
-        double p =2*a+2*b;
+    double area()
+    {
+        double p=3.14*r*r;
         return p;
     }
 }
-public class rectangle extends AppCompatActivity {
-    public final static String RECTANGLE_RESULT="Area of triangle";
+
+public class circle extends AppCompatActivity {
+
+    public final static String CIRCLE_RESULT="Area of triangle";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rectangle);
+        setContentView(R.layout.activity_circle);
 
-        ((Button) findViewById(R.id.rectangleCalcButton)).setOnClickListener(new View.OnClickListener() {
+        ((Button) findViewById(R.id.circleCalcButton)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                double a= Double.parseDouble(((EditText)findViewById(R.id.aaEitText)).getText().toString());
-                double b= Double.parseDouble(((EditText)findViewById(R.id.bbEditText)).getText().toString());
-                Rectangle rectangle= new Rectangle(a,b);
-                ((TextView)findViewById(R.id.rectangleResultTextView)).setText(Double.toString(rectangle.area()));
+                double r= Double.parseDouble(((EditText)findViewById(R.id.rEditText)).getText().toString());
+
+                Circle c= new Circle(r);
+                ((TextView)findViewById(R.id.circleResultTextView)).setText(Double.toString(c.area()));
             }
         });
         ((Button)findViewById(R.id.backAndAddButton)).setOnClickListener(
@@ -40,11 +45,11 @@ public class rectangle extends AppCompatActivity {
 
                     @Override
                     public void onClick(View view) {
-                        String area_string=((TextView)findViewById(R.id.rectangleResultTextView))
+                        String area_string=((TextView)findViewById(R.id.circleResultTextView))
                                 .getText().toString();
 
                         Intent backIntent = new Intent();
-                        backIntent.putExtra(RECTANGLE_RESULT,area_string);
+                        backIntent.putExtra(CIRCLE_RESULT,area_string);
                         setResult(RESULT_OK,backIntent);
                         finish();
                     }
@@ -58,7 +63,7 @@ public class rectangle extends AppCompatActivity {
                     {
                         Intent backIntent = new Intent();
 
-                        backIntent.putExtra(RECTANGLE_RESULT,"0.0");
+                        backIntent.putExtra(CIRCLE_RESULT,"0.0");
                         setResult(RESULT_OK,backIntent);
                         finish();
                     }

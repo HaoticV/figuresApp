@@ -11,7 +11,8 @@
         android:id="@+id/imageView2"
         android:layout_width="395dp"
         android:layout_height="167dp"
-        app:srcCompat="@drawable/rectangle" />
+        app:srcCompat="@drawable/rectangle"
+        android:contentDescription="@string/todo" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,29 +20,30 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/aEitText"
+            android:id="@+id/aaEitText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:autofillHints=""
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="A" />
+            android:inputType="number"
+            android:text="@string/a" />
 
         <EditText
-            android:id="@+id/bEditText"
+            android:id="@+id/bbEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             android:text="B" />
 
         <Button
-            android:id="@+id/triangleCalcButton"
+            android:id="@+id/rectangleCalcButton"
             android:layout_width="match_parent"
             android:layout_height="71dp"
             android:layout_weight="1"
-            android:text="Oblicz" />
+            android:text="@string/oblicz" />
 
     </LinearLayout>
 
@@ -51,24 +53,24 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/triangleResultTextView"
+            android:id="@+id/rectangleResultTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="@string/textview2" />
 
         <Button
             android:id="@+id/backAndAddButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="DODAJ" />
+            android:text="@string/dodaj2" />
 
         <Button
             android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="REZYGNACJA" />
+            android:text="@string/rezygnacja" />
     </LinearLayout>
 </LinearLayout>

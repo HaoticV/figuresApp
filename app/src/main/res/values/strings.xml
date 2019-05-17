@@ -10,4 +10,15 @@
     <string name="button11"> OBLICZ </string>
     <string name="button12"> DODAJ </string>
     <string name="button13"> REZYGNACJA </string>
+
+    <string name="rezygnacja">REZYGNACJA</string>
+    <string name="dodaj1">DODAJ</string>
+    <string name="textview1">TextView</string>
+    <string name="todo">TODO</string>
+    <string name="oblicz">Oblicz</string>
+    <string name="a">A</string>
+    <string name="r">R</string>
+    <string name="rezygnacja1">REZYGNACJA</string>
+    <string name="dodaj2">DODAJ</string>
+    <string name="textview2">TextView</string>
 </resources>

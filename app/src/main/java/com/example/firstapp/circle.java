@@ -24,7 +24,7 @@ class Circle
 
 public class circle extends AppCompatActivity {
 
-    public final static String CIRCLE_RESULT="Area of triangle";
+    public final static String CIRCLE_RESULT="Area of Circle";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

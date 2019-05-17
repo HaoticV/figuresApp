@@ -13,8 +13,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     public static final int CODE_TRIANGLE=10;
-    public static final int CODE_RECTANGLE=10;
-    public static final int CODE_CIRCLE=10;
+    public static final int CODE_RECTANGLE=11;
+    public static final int CODE_CIRCLE=12;
     private double area;
 
     @Override
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent triangleIntent = new Intent(MainActivity.this,Triangle.class);
+                        Intent triangleIntent = new Intent(MainActivity.this, TriangleActivity.class);
                         startActivityForResult(triangleIntent, CODE_TRIANGLE);
                     }
                 }
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent rectangleIntent = new Intent(MainActivity.this,Rectangle.class);
+                        Intent rectangleIntent = new Intent(MainActivity.this,rectangle.class);
                         startActivityForResult(rectangleIntent, CODE_RECTANGLE);
                     }
                 }
@@ -58,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
         super.onActivityResult(requestCode, resultCode, data);
-        String new_area=data.getStringExtra(triangle.TRIANGLE_RESULT);
-        String new_area1=data.getStringExtra(circle.CIRCLE_RESULT);
+        String new_area=data.getStringExtra("Area of Triangle");
+        String new_area1=data.getStringExtra("Area of Circle");
         String new_area2=data.getStringExtra(rectangle.RECTANGLE_RESULT);
 
         area += Double.parseDouble(new_area);

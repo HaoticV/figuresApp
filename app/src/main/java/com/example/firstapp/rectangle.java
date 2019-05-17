@@ -20,7 +20,7 @@ class Rectangle{
     }
 }
 public class rectangle extends AppCompatActivity {
-    public final static String RECTANGLE_RESULT="Area of triangle";
+    public final static String RECTANGLE_RESULT="Area of TriangleActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

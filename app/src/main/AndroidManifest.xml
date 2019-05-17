@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".circle"></activity>
-        <activity android:name=".rectangle" />
+        <activity android:name=".rectangle"></activity>
         <activity
-            android:name=".triangle"
-            android:label="Pole trojkata" />
+            android:name=".TriangleActivity"
+            android:label="Pole trojkata"></activity> />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
